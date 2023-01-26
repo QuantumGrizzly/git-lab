@@ -10,6 +10,13 @@ git checkout dev                                              # Switch to anothe
 # Check changes
 git status                                                    # Display list of unchecked changes (red unchecked, green in stage)
 git add *                                                     # Add all new changes to stage
-git commit -m "Add version 01"                              # Create a commit with a message
+git commit -m "Add version 01"                                # Create a commit with a message
 git log                                                       # Display list of commits
 git push                                                      # Push changes from local to remote
+
+# Merge branches
+git checkout master                                           # Switch to the target branch
+git merge dev                                                 # Merge source branch into the target branch
+
+# Display branches
+git log --graph --pretty=oneline --abbrev-commit              # Display branches tree
